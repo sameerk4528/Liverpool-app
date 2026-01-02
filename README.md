@@ -1,52 +1,50 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+Liverpool FC Fan Explorer 
+A high-performance React Native application designed for the Scouse community. This project serves as a deep dive into Mobile UI Architecture, focusing on complex layout patterns and performance-optimized scrolling.
 
-# Getting Started
+ Project Goals
+The main objective of this project was to move beyond basic "Hello World" apps and master the intricacies of the React Native Flexbox engine. Specifically, I focused on:
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+Nested Text Wrapping: Implementing seamless "Read More" logic within paragraph components.
 
-## Step 1: Start the Metro Server
+Asset Optimization: Handling local vs. remote images without layout thrashing.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+Horizontal Data Visualization: Creating a "Seasons Stats" engine using a horizontally-oriented ScrollView.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+ Key Features
+Spotlight Card: A custom-designed profile card utilizing flexDirection: 'row' to balance visual assets with dense biographical text.
+Dynamic Season Tracker: A horizontal scrollable component containing the last 10 years of LFC history.
+Actionable UX: Direct deep-linking to official social channels and the LFC website using the Linking API.
 
-```bash
-# using npm
+Tech Stack & Architecture
+Frontend: React Native (CLI) with TypeScript.
+Layout: Flexbox-first design with a focus on flexGrow and contentContainerStyle for smooth scrolling performance.
+State Management: Data-driven UI using local object arrays for efficient rendering.
+
+ Getting Started
+Prerequisites
+Node.js (v18+)
+Android Studio / Xcode
+React Native CLI
+
+Installation
+Clone the repo:
+git clone https://github.com/yourusername/ProjectTwo.git
+
+Install dependencies:
+npm install
+
+Start Metro Bundler:
 npm start
 
-# OR using Yarn
-yarn start
-```
+Launch the app:
+npm run android  # For Android
+# OR
+npm run ios      # For iOS
 
-## Step 2: Start your Application
+ Challenges Overcome
+One of the primary challenges was ensuring the Season Stats cards didn't "squish" when scrolling horizontally. I solved this by implementing a fixed width on the cards combined with contentContainerStyle to ensure the scroll engine correctly calculated the overflow boundaries.
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
+##  Modifying your App
 
 Now that you have successfully run the app, let's modify it.
 
