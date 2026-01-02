@@ -22,13 +22,16 @@ The main objective of this project was to move beyond basic apps and master the 
 
 1. **Clone the repo:**
    ```bash
-   ```git clone [git clone https://github.com/yourusername/ProjectTwo.git]
+   git clone [git clone https://github.com/yourusername/ProjectTwo.git]
 2. **Install dependencies:**
-.  ```npm install
-3. **Start Metro Bundler:**
-. ```npm start
-4. **Launch the app:**
- ```npm run android.
+    ```bash
+   npm install
+4. **Start Metro Bundler:**
+   ```bash
+   npm start
+6. **Launch the app:**
+  ```bash
+npm run android
 
 ##  Modifying your App
 
