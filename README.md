@@ -1,48 +1,34 @@
-Liverpool FC Fan Explorer 
-A high-performance React Native application designed for the Scouse community. This project serves as a deep dive into Mobile UI Architecture, focusing on complex layout patterns and performance-optimized scrolling.
+# Liverpool FC Fan Explorer 
 
- Project Goals
-The main objective of this project was to move beyond basic "Hello World" apps and master the intricacies of the React Native Flexbox engine. Specifically, I focused on:
+A high-performance React Native application designed for the Scouse community. This project serves as a deep dive into **Mobile UI Architecture**, focusing on complex layout patterns and performance-optimized scrolling.
 
-Nested Text Wrapping: Implementing seamless "Read More" logic within paragraph components.
+##  Project Goals
+The main objective of this project was to move beyond basic apps and master the intricacies of the **React Native Flexbox engine**. Specifically, I focused on:
+* **Nested Text Wrapping**: Implementing seamless "Read More" logic.
+* **Asset Optimization**: Handling local vs. remote images without layout issues.
+* **Horizontal Data Visualization**: Creating a "Seasons Stats" engine using a horizontally-oriented `ScrollView`.
 
-Asset Optimization: Handling local vs. remote images without layout thrashing.
+##  Key Features
+* **Salah Spotlight Card**: A custom-designed profile card utilizing `flexDirection: 'row'` to balance visual assets with biographical text.
+* **Dynamic Season Tracker**: A horizontal scrollable component containing the last 10 years of LFC history.
+* **Actionable UX**: Direct deep-linking to official social channels using the `Linking` API.
 
-Horizontal Data Visualization: Creating a "Seasons Stats" engine using a horizontally-oriented ScrollView.
+##  Tech Stack
+* **Framework**: React Native (CLI)
+* **Language**: TypeScript / JavaScript
+* **Styling**: Flexbox
 
- Key Features
-Spotlight Card: A custom-designed profile card utilizing flexDirection: 'row' to balance visual assets with dense biographical text.
-Dynamic Season Tracker: A horizontal scrollable component containing the last 10 years of LFC history.
-Actionable UX: Direct deep-linking to official social channels and the LFC website using the Linking API.
+##  Installation & Setup
 
-Tech Stack & Architecture
-Frontend: React Native (CLI) with TypeScript.
-Layout: Flexbox-first design with a focus on flexGrow and contentContainerStyle for smooth scrolling performance.
-State Management: Data-driven UI using local object arrays for efficient rendering.
-
- Getting Started
-Prerequisites
-Node.js (v18+)
-Android Studio / Xcode
-React Native CLI
-
-Installation
-Clone the repo:
-git clone https://github.com/yourusername/ProjectTwo.git
-
-Install dependencies:
-npm install
-
-Start Metro Bundler:
-npm start
-
-Launch the app:
-npm run android  # For Android
-# OR
-npm run ios      # For iOS
-
- Challenges Overcome
-One of the primary challenges was ensuring the Season Stats cards didn't "squish" when scrolling horizontally. I solved this by implementing a fixed width on the cards combined with contentContainerStyle to ensure the scroll engine correctly calculated the overflow boundaries.
+1. **Clone the repo:**
+   ```bash
+   ```git clone [git clone https://github.com/yourusername/ProjectTwo.git]
+2. **Install dependencies:**
+.  ```npm install
+3. **Start Metro Bundler:**
+. ```npm start
+4. **Launch the app:**
+ ```npm run android.
 
 ##  Modifying your App
 
