@@ -26,14 +26,16 @@ The main objective of this project was to move beyond basic apps and master the 
 2. **Install dependencies:**
     ```bash
    npm install
-4. **Start Metro Bundler:**
+3. **Start Metro Bundler:**
    ```bash
    npm start
-6. **Launch the app:**
+4. **Launch the app:**
   ```bash
-npm run android
+ npm run android
+```
 
-##  Modifying your App
+
+## ** Modifying your App
 
 Now that you have successfully run the app, let's modify it.
 
@@ -44,7 +46,13 @@ Now that you have successfully run the app, let's modify it.
 
 ## Congratulations! :tada:
 
-You've successfully run and modified your React Native App. :partying_face:
+You've successfully run and modified your React Native App.
+
+
+## Challenges Overcome
+One of the primary challenges was ensuring the Season Stats cards didn't "squish" when scrolling horizontally. I solved this by implementing a fixed width on the cards combined with contentContainerStyle to ensure the scroll engine correctly calculated the overflow boundaries.
+It is my first relevent project on github from which i have learned about React-native its installation and devloped an intrest in **APP-DEV** field.
+I'll be making further more relvent happs from now on and make sure i contribute something to app devlopment field in the future
 
 ### Now what?
 
